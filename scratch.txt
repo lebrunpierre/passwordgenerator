@@ -1,0 +1,38 @@
+Made for random notes to help me make this project
+
+Objective:
+    program will make a random password for user
+
+    1. user can specify how long the password is
+    2. user can say how many symbols they would like
+    3. user can say how many numbers they would like
+
+
+classes
+
+utils: contains all the characters that can be used
+tools: will contain functions
+main: where program will be run from and user activity starts
+
+
+function gen password:
+parameters (total_password_len, symbol_len, number_len):
+    new_password = []
+    random_letters_len = total_password_len - (symbol_len + number_len)
+
+    letters = password_gen_loop(total_password_len, character_type)
+    symbol = password_gen_loop(symbol_len, character_type)
+    numbers =password_gen_loop(number_len, character_type)
+
+    append all to new_password
+
+    rondom the whole array if possible
+
+    return new_password
+
+
+password_gen_loop(len, character_type):
+    password = []
+    for len in utils.character_type:
+        password.append[random.choice(character_type)]
+    return password
